@@ -1,0 +1,118 @@
+% Lenguajes de Programación 2019-1
+% Plantilla para reportes de laboratorio.
+
+\documentclass[spanish,12pt,letterpaper]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{authblk}
+\usepackage{listings}
+\usepackage{dsfont}
+
+\title{Comandos de emacs}
+\author{Emiliano Galeana Araujo}
+\affil{Facultad de Ciencias, UNAM}
+\date{20 de Septiembre de 2018}
+
+\begin{document}
+
+\maketitle
+
+\section{Comandos}
+Lista de comandos que uso/he usado en emacs, espero les sirva y se puedan
+acostombrar a ellos. 
+\begin{itemize}
+\item Para moverse en el texto
+  \begin{itemize}
+  \item \texttt{C-p} Sirve para posicionar el cursor una línea arriba.
+  \item \texttt{C-n} Sirve para posicionar el cursor una línea abajo.
+  \item \texttt{C-a} Sirve para posicionar el cursor al inicio de la línea.
+  \item \texttt{C-e} Sirve para posicionar el cursos al final de la línea.
+  \item \texttt{C-f} Sirve para avanzar un caracter, (Es análogo a usar la
+    flecha $\rightarrow$).
+  \item \texttt{C-b} Sirve para retroceder un caracter, (Es análogo a usar la
+    flecha $\leftarrow$).
+  \item \texttt{M-f} Sirve para avanzar una palabra.
+  \item \texttt{M-b} Sirve para retroceder una palabra.
+  \item \texttt{C-s} Abre un mini-buffer, escriben la palabra a buscar, y con
+    \texttt{C-s} avanzan la búsqueda por palabra, con \texttt{enter} se
+    posicionan en la palabra seleccionada y con el comando que cancela comandos
+    cancelan la búsqueda.
+  \item \texttt{M-v} Se mueve a la página anterior.
+  \item \texttt{C-v} Se mueve a la página siguiente.
+  \item \texttt{C-l} Mueve la página para que el cursor esté a la mitad de la
+    pantalla, si se ejecuta de nuevo el comando, mueve la página para que esté
+    al tope de la pantalla, y una vez más, lleva el cursor a lo más abajo de la
+    pantalla, es cíclico.
+  \end{itemize}
+\item Para editar archivos
+  \begin{itemize}
+  \item \texttt{C-x C-s} Guarda las modificaciones en el archivo.
+  \item \texttt{C-x C-f} Abrir un nuevo archivo, si existe lo abre, sino, lo
+    crea.
+  \item \texttt{C-x C-v} Creo que es análogo a \texttt{C-x C-f}.
+  \item \texttt{C-y} Pegar (Es análogo a \texttt{C-v} En algún otro editor o en
+    general en casi lo que sea.)
+  \item \texttt{M-w} Copia (Es análogo a \texttt{C-c} En algún otro editor o en
+    general en casi lo que sea), sirve sin seleccionar, pero no sé como, yo
+    selecciono, y luego copio.
+  \item \texttt{C-w} Corta (Es análogo a \texttt{C-x} En algún otro editor o en
+    general en casi lo que sea), igual que \texttt{M-w} sirve sin seleccionar,
+    pero no sé como, y mejor selecciono.
+  \item \texttt{C-o} Es como dar enter, crea una línea debajo del cursor.
+  \item \texttt{C-d} Es como borrar una línea, borra el salto de línea seguido
+    del cursor, si no está al final de una línea, borra caracter por caracter.
+    
+  \end{itemize}
+\item Seleccionar
+  \begin{itemize}
+  \item \texttt{C-space} Habilita un marcador en la posición del cursor, y con
+    los comandos para moverse en el texto, se puede seleccionar parte de este,
+    es útil para definir qué se quiere copiar, o borrar, se quita con el comando
+    que cancela comandos, está al final, si se pone \texttt{C-space} de nuevo,
+    se coloca un nuevo marcador.
+  \item \texttt{C-x C-p} Me parece que es análogo a \texttt{C-x h}
+  \item \texttt{C-x h} Selecciona todo el buffer.
+  \item \texttt{M-h} Selecciona toda la línea y sin soltar \texttt{M}, por cada
+    \texttt{h} que presionen, seleccionan una línea más, hacia abajo. 
+  \end{itemize}
+\item buffers
+  \begin{itemize}
+  \item \texttt{C-x k} Mata un buffer, esto es, lo cierra, si no se han guardado
+    los cambios, pregunta si aún así se quiere cerrar.
+  \item \texttt{C-x b} Lista los buffers abiertos, y escribiendo el nombre de uno,
+    con \texttt{Tab} pueden autompletar, presionan \texttt{enter} y se mueven a
+    ese buffer.
+  \item \texttt{C-x $\leftarrow$} Se mueven al buffer a la izquierda.
+  \item \texttt{C-x $\rightarrow$} Se mueven al buffer a la derecha.
+  \item \texttt{C-x 2} Clona el buffer a la mitad de la pantalla horizontalmente.
+  \item \texttt{C-x 3} Clona el buffer a la mitad de la pantalla verticalmente.
+  \item \texttt{C-x 0} Borra la ventana en la que esté posicionado el cursor.
+  \item \texttt{C-x 1} Borra todas las ventanas y deja solo en la que está
+    posicionado el cursor.
+  \item \texttt{C-x o} Se pueden mover entre las ventanas creadas.
+  \end{itemize}
+\item otros
+  \begin{itemize}
+  \item \texttt{C-x g} Comando que cancela comandos.
+  \item \texttt{M-x tetris} Abre el juego de tetris :).
+  \item \texttt{M-\%} Eso es \texttt{M-Shift-5} abre un minibuffer, escriben una
+    palabra que quieren reemplazar, dan \texttt{enter}, escriben la palabra por
+    la cual reemplazar y dan \texttt{enter}, para cada aparición de la palabra a
+    reemplazar va a preguntar si la quieren reemplazar, presionan \texttt{y}
+    para aceptar, \texttt{n} para cancelar, en ambos casos, va a la siguiente
+    aparición de la palabra.
+  \end{itemize}
+\end{itemize}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
